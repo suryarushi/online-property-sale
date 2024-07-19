@@ -1,0 +1,147 @@
+/* css by Templatesperfect.com */
+
+body {
+	margin: 0 0 10px 0;
+	padding: 0;
+	background: #eff3e4 url(images/bg.jpg); background-repeat:repeat-x;
+	text-align: justify;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+#wrapper {
+	width: 920px;
+	margin: 0 auto;
+	background: #ffffff;
+	
+}
+
+#header {
+	width: 920px;
+	height: 200px;
+	margin: 0 auto; 
+	
+}
+
+#left {
+	float: left;
+	width: 220px;
+	margin:10px 0 0 10px;
+	padding:5px;
+	}
+#content {
+	float: left;
+	width: 640px;
+	margin:10px 0 0 20px;
+	padding:5px;
+}
+
+.clear{clear:both; height:0px;}
+
+#footer
+{
+ height:30px;
+ padding:10px 60px 0 0;
+ background-color:#000000;
+ text-align:right;
+ color:#cccccc;
+}
+h2 {
+	font-size: 25px;
+	display:inline;
+}
+
+h3{
+	font-size: 17px;
+	color:#be4204;
+	display:inline;
+}
+h4 {
+	font-size: 12px;
+	color:#be4204;
+	display:inline;
+	padding-left:35px;
+
+	
+}
+
+p, ol, ul {
+	line-height: 22px;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ul li { width:220px;
+	padding: 2px 0 5px 0;
+	border-bottom:1px dotted #444444;;
+}
+
+ul li.first {
+	background: none;
+}
+
+img {
+	float: left;
+	margin:8px;
+	border:2px solid #cccccc;
+}
+
+h1
+{ padding:45px 0 0 30px;
+  color:#ff0000;
+	font-size: 36px;
+	text-decoration:none;
+	line-height:36px;
+	margin:0px;
+	}
+
+
+h1 a { color:#ff0000;
+	text-decoration:none;
+	}
+h1 a:hover { color:#ffffff;
+	text-decoration:none;
+}
+
+#menu
+{ height:50px;
+ margin-top:50px;
+}
+#rc1
+{width:10px; height:50px; background-image:url(images/rc1.png); background-repeat:no-repeat; float:left;}
+#bg
+{ width:870px; height:50px; background-image:url(images/linksbg.png); background-repeat:repeat-x; float:left; padding-left:30px; }
+#rc2
+{width:10px; height:50px; background-image:url(images/rc2.png); background-repeat:no-repeat; float:left;}
+
+.toplinks
+{ 
+  width:80px;
+  text-align:center;
+  float:left;
+  height:40px;
+  line-height:40px;
+  font-family:tahoma;
+  font-size:14px;
+  font-weight:bold;
+  margin:5px 0 0 15px;
+  color:#cccccc;
+  text-decoration:none;
+ }
+
+.toplinks:hover
+{ color:#FFCC00;
+ }
+
+a {
+	color: #9B9A64;
+}
+
+a:hover {
+	text-decoration: none;
+	color:#FF6600;
+}

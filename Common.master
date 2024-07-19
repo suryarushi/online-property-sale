@@ -1,0 +1,87 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Common.master.cs" Inherits="Common" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table width="100%" style="margin-top:0px; background-color:Black;">
+            <tr>
+                <td colspan="3" style="height: 171px; font-size: 2em; color: red; background-color: #99ccff; background-repeat: no-repeat;" align="center">
+                   
+                    <table width="100%" border="1px" style="border-style:solid; border-color:Black;">
+                    <tr>
+                    <td style="background-image: url(images/images18.jpg); border:1px; border-style:solid; border-color:Black; height: 171px; width:20%; background-repeat: no-repeat;">
+                    </td>
+                   <td style="background-image: url(images/images11.jpg); border:1px; border-style:solid; border-color:Black; height: 171px; width:20%; background-repeat: no-repeat;">
+                    </td>
+                     <td style="background-image: url(images/images14.jpg); border:1px; border-style:solid; border-color:Black; height: 171px; width:20%; background-repeat: no-repeat;">
+                  </td>
+                  <td style="background-image: url(images/images23.jpg); border:1px; border-style:solid; border-color:Black; height: 171px; width:20%; background-repeat: no-repeat;">
+                  </td>
+                  </td>
+                  <td style="background-image: url(images/images3.jpg); border:1px; border-style:solid; border-color:Black; height: 171px; width:20%; background-repeat: no-repeat;">
+                  </td>
+
+                    </tr>
+                    </table>
+                     <marquee><strong><span>Online RealState</span></strong></marquee>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 19px">
+                <asp:Menu ID="mnu1" runat="Server" Orientation="Horizontal" Width="100%" Height="40px" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Verdana" Font-Size="1em" Font-Strikeout="False" ForeColor="Purple" StaticSubMenuIndent="10px">
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <DynamicMenuStyle BackColor="#B5C7DE" />
+                    <StaticSelectedStyle BackColor="#507CD1" />
+                    <DynamicSelectedStyle BackColor="#507CD1" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="About Us" Value="About Us"></asp:MenuItem>
+                        <asp:MenuItem Text="Login" Value="Loigin">
+                            <asp:MenuItem Text="Admin" Value="Admin" NavigateUrl="~/Admin_Login.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="User" Value="User" NavigateUrl="~/User_Login.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Register" Value="Register" 
+                            NavigateUrl="~/Registration.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle ForeColor="White" />
+                </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20%; background-color: #003399;">
+                <marquee direction="up" style="height: 324px">
+                <P style="FONT-SIZE: 15pt; COLOR: mediumspringgreen; FONT-VARIANT: small-caps">
+                <asp:Label ID="lblmsg" runat="server" Text="We 
+      are the best propery dealer in bhopal.More than 100&nbsp;client has been 
+      satisfied with us. Our recent project is very attractive and it's cost has 
+      under the budget of every family." ></asp:Label></P></marquee>
+               </td>
+                <td colspan="2" style="width:80%; background-color:Aqua;">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #33ccff; color: red; text-decoration: underline; : 59px;" colspan="3" align="center">
+                    abc@acesoftware.com<br />
+                    copyright 2008
+                    <br />
+                 <asp:ImageButton ID="imagebox1" PostBackUrl="www.facebook.com" runat="server" Height="40px" ImageUrl="~/images/images90.jpg" Width="40px" />
+                 <asp:ImageButton ID="ImageButton1" runat="server" Height="40px" ImageUrl="~/images/images91.jpg" Width="40px" />
+                 <asp:ImageButton ID="ImageButton2" runat="server" Height="40px" ImageUrl="~/images/images92.jpg" Width="40px" />
+                    </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+    </form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_Master.master.cs" Inherits="Admin_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body bgcolor="black">
+    <form id="form1" runat="server">
+        <table width="100%" style="background-color:Maroon;">
+            <tr>
+                <td colspan="2" align="right" style="height: 26px; color:Lime;">
+                Welcome:-
+                <asp:Label ID="lblusername" runat="server" Text="" BackColor="Transparent" ForeColor="yellow"></asp:Label>
+                 <asp:Label ID="Button1" runat="Server" Text="|" BackColor="Transparent" ForeColor="green" Font-Bold="true" Font-Size="medium" />
+              <asp:LinkButton ID="lnklogout" runat="server" Text="LogOut" BackColor="Transparent" 
+                        ForeColor="#FFFF80" onclick="lnklogout_Click"></asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 44px">
+                <table width="100%" style="border-color:Blue; border-style:solid;" border="1px">
+                <tr>
+                <td style="font-size: 1em; text-transform: uppercase"><asp:LinkButton ID="lnk1" 
+                        runat="Server" Text="Add City" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/Add_City.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase">
+                    <asp:LinkButton ID="lnk2" 
+                        runat="Server" Text="Add Area" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/Add_Area.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase"><asp:LinkButton ID="lnk3" 
+                        runat="Server" Text="Add Category" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/Add_Category.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase"><asp:LinkButton ID="lnk4" 
+                        runat="Server" Text="View City" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/View_city.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase"><asp:LinkButton ID="lnk5" 
+                        runat="Server" Text="View Area" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/View_Area.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase">
+                    <asp:LinkButton ID="lnk6" 
+                        runat="Server" Text="View Users" ForeColor="Lime" 
+                        PostBackUrl="~/View_Users.aspx" Font-Bold="True"></asp:LinkButton></td>
+                </tr>
+                <tr>
+                <td style="font-size: 1em; text-transform: uppercase">
+                    <asp:LinkButton ID="LinkButton1" 
+                        runat="Server" Text="Home"  ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/Admin_home.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase">
+                    <asp:LinkButton ID="LinkButton2" 
+                        runat="Server" Text="View Property" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/View_Property.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase">
+                    <asp:LinkButton ID="LinkButton3" 
+                        runat="Server" Text="View Contact" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/View_Contact.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase">
+                    <asp:LinkButton ID="LinkButton4" 
+                        runat="Server" Text="Change Password" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/Admin_ChangePassword.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase">
+                    <asp:LinkButton ID="LinkButton5" 
+                        runat="Server" Text="City &amp; Area" ForeColor="Lime" Font-Bold="true" 
+                        PostBackUrl="~/View_AreaWithCity.aspx"></asp:LinkButton></td>
+                <td style="font-size: 1em; text-transform: uppercase">
+                    <asp:LinkButton ID="LinkButton6" 
+                        runat="Server" Text="xyz" ForeColor="Lime" Font-Bold="True" 
+                        Visible="False"></asp:LinkButton></td>
+                </tr>
+                </table>
+                </td>
+               
+            </tr>
+            <tr>
+                <td style="height: 21px" colspan="2" >
+        
+        <table width="100%" style="background-color:Aqua;">
+        <tr>
+        <td align="center">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+         </asp:contentplaceholder>
+
+        </td>
+        </tr>
+        </table>
+                       </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                </td>
+            </tr>
+        </table>
+        <br />
+        &nbsp;
+    </form>
+</body>
+</html>
